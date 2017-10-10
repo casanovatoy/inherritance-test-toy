@@ -10,7 +10,7 @@ package th.co.geniustree.training.inherritance.test;
  *
  * @author TOY
  */
-public class Fish extends Animal{
+public class Fish extends Animal implements Aquatic{
     public Fish() {
         //System.out.println("Fish");
         this.setName("Fish");
@@ -18,5 +18,10 @@ public class Fish extends Animal{
     @Override
     public void eat(){
         System.out.println("Fish Eat");
+    }
+    
+    @Override
+    public void swim(){
+        
     }
 }
